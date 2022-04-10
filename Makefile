@@ -165,7 +165,7 @@ build-ecl:
 
 .PHONY: build-sbcl
 build-sbcl:
-	$(SBCL) --load boot.lsp
+	$(SBCL) --control-stack-size 8 --load boot.lsp
 
 #
 # Test an implementation
