@@ -36,13 +36,13 @@ ifeq ($(OSName),windows)
 	Slash=\\\\
 	ArchiveSuffix=.zip
 	BinarySuffix=.exe
-	All=clisp ccl sbcl
+	All=clisp sbcl
 	PS=powershell.exe -Command
 else
 	Slash=/
 	ArchiveSuffix=.tar.gz
 	BinarySuffix=
-	All=ccl ecl sbcl
+	All=ecl sbcl
 	ifeq ($(OSName),freebsd)
 		All=ccl ecl sbcl
 	else ifeq ($(OSName),openbsd)
