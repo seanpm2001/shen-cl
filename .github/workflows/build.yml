@@ -43,8 +43,6 @@ jobs:
         if: ${{ matrix.os == 'ubuntu' }}
         run: |
           sudo apt install -y sbcl ecl libffi-dev
-          wget http://mr.gy/blog/clozure-cl_1.11_amd64.deb
-          sudo dpkg -i clozure-cl_1.11_amd64.deb
       - name: Setup dependencies (MacOS)
         if: ${{ matrix.os == 'macos' }}
         run: brew install sbcl
